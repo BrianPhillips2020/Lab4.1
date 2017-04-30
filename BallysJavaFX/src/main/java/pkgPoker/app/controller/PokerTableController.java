@@ -108,10 +108,10 @@ public class PokerTableController implements Initializable {
 		
 		ToggleButton button = (ToggleButton)event.getSource();
 		
-		if(button.getId() == "btnPos1SitLeave"){
+		if(button.getId().equals("btnPos1SitLeave")){
 			mainApp.getPlayer().setiPlayerPosition(1);
 		}
-		else if(button.getId() == "btnPos2SitLeave"){
+		else if(button.getId().equals("btnPos2SitLeave")){
 			mainApp.getPlayer().setiPlayerPosition(2);
 		}
 		
